@@ -1,0 +1,21 @@
+Quick example of Org babel
+
+#+begin_src ruby :results output
+10.times do
+  puts "Hello world!!!!"
+end
+#+end_src
+
+#+RESULTS:
+#+begin_example
+Hello world!!!!
+Hello world!!!!
+Hello world!!!!
+Hello world!!!!
+Hello world!!!!
+Hello world!!!!
+Hello world!!!!
+Hello world!!!!
+Hello world!!!!
+Hello world!!!!
+#+end_example

@@ -1,0 +1,16 @@
+** API documentation
+
+Making a request to =/=...
+
+#+name: response_from_root
+#+begin_src sh :results output code
+curl 127.0.0.1:9292 2> /dev/null
+#+end_src
+
+...would give you the following response:
+
+#+results: response_from_root
+#+begin_src sh
+{"hello":"world"}
+#+end_src
+

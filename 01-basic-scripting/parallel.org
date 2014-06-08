@@ -1,0 +1,26 @@
+#+runmode:    parallel
+
+#+name: ruby-hello
+#+begin_src ruby
+$stdout.sync = true
+loop { puts "hello from ruby"; sleep 1 }
+#+end_src
+
+#+name: python-hello
+#+begin_src python
+import time
+import sys
+
+while True:
+  print "hello from python"
+  sys.stdout.flush()
+  time.sleep(1)
+#+end_src
+
+#+name: bash-hello
+#+begin_src sh
+while true; do
+echo "hello from bash"
+sleep 1
+done
+#+end_src

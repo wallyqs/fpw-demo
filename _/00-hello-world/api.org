@@ -1,0 +1,36 @@
+* A sample API
+
+** The application itself
+
+#+begin_src ruby :tangle Gemfile
+source "https://rubygems.org"
+
+gem 'sinatra'
+#+end_src
+
+#+begin_src ruby :tangle config.ru
+$LOAD_PATH << File.dirname(__FILE__)
+require 'app'
+
+run Sinatra::Application
+#+end_src
+
+#+begin_src ruby :tangle app.rb
+require 'sinatra'
+require 'json'
+
+get '/' do
+  content_type 'application/json'
+  response = {'hello' => 'goodbye'}
+  response.to_json
+end
+#+end_src
+
+** Running the application
+
+#+name: run
+#+begin_src sh
+bundle install
+bundle exec rackup
+#+end_src
+

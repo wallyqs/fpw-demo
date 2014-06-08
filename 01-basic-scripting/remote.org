@@ -1,0 +1,19 @@
+#+runmode: parallel
+#+sshidentityfile: keys/vagrant
+#+sshpassword:          vagrant
+
+#+name: remote-hello
+#+begin_src sh :dir /vagrant@127.0.0.1#2200:
+while true; do
+echo "hello from `hostname`"
+sleep 1
+done
+#+end_src
+
+#+name: local-hello
+#+begin_src sh
+while true; do
+echo "hello from `hostname`"
+sleep 1
+done
+#+end_src

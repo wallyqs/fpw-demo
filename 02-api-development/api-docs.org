@@ -1,0 +1,30 @@
+#+TITLE: API example responses
+
+Making a request to root path...
+
+#+name: when_requesting_root_path
+#+begin_src sh :results output code
+curl 127.0.0.1:8000 2> /dev/null | python -m json.tool
+#+end_src
+
+...would give you a greeting:
+
+#+results: when_requesting_root_path
+#+BEGIN_SRC sh
+{
+    "hello": "world"
+}
+#+END_SRC
+
+#+name: when_requesting_health_route
+#+begin_src sh :results output code
+curl 127.0.0.1:8000/health 2> /dev/null
+#+end_src
+
+Results into:
+
+#+results: when_requesting_health_route
+#+begin_src sh
+OK
+#+end_src
+

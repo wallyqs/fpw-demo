@@ -1,0 +1,9 @@
+#+TITLE: Development server for the API
+
+#+include: "api.org"
+
+#+name: dev-server
+#+begin_src sh
+bundle install
+bundle exec rackup -p 8000
+#+end_src

@@ -1,0 +1,17 @@
+#+runmode:    chained
+#+final_task: ruby-hello
+
+#+name: ruby-hello
+#+begin_src ruby :after python-hello
+puts "hello from ruby"
+#+end_src
+
+#+name: python-hello
+#+begin_src python
+print "hello from python"
+#+end_src
+
+#+name: bash-hello
+#+begin_src sh :before python-hello
+echo "hello from bash"
+#+end_src
